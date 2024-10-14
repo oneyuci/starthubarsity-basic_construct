@@ -7,9 +7,27 @@ def int_converter(value, value2):
                 type(value2) == int
                 print(value + value2)
 
+            elif type(value) == int:
+                 type(value2) == float
+                 print(value + int(value2))
+
+            elif type(value) == int:
+                 type(value2) == str
+                 number = json.loads(value2)
+                 print(value + int(number) )
+
             elif type(value) == float:  
                 type(value2) == float
                 print(int(value) + int(value2))
+
+            elif type(value) == float:
+                 type(value2) == str
+                 number = json.loads(value2)
+                 print(int(value) + int(number))
+
+            elif type(value) == float:
+                 type(value2) == int
+                 print(int(value) + value2)
 
             elif type(value) == str: 
                 type(value2) == str
@@ -24,4 +42,4 @@ def int_converter(value, value2):
         except(TypeError, ValueError, NameError):
             print("Cannot be converted")
                     
-int_converter("2.5", "5")
+int_converter(2.5, "34")
