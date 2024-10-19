@@ -6,4 +6,19 @@ for name in names:
 
     print(name)
 
+while True:
+    var_name = "YUCI"
+    print(var_name == "Yuci")
 
+
+    prompt = input("Play game?: ").lower()
+    if prompt == "yes":
+        print("Playing")
+        break
+
+    elif prompt == "no":
+        print("Goodbye")
+        break
+
+    else:
+        print("invalid input, Enter a Valid Input")
