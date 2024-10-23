@@ -1,6 +1,8 @@
 while True:
     try:
         movie_ticket_price = int(input("What is your age: "))
+        movie_ticket_price2 = int(input("What is the time: "))
+
 
         if movie_ticket_price <= 0:
             print("Invalid input - Please Input A Valid Age")
