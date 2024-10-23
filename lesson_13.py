@@ -66,5 +66,8 @@ while True:
             if true1 == "no":
                 break
 
+        else:
+            print("Invalid input")
+
     
         
